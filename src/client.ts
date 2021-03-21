@@ -238,7 +238,10 @@ export class Client {
    *
    * The way STOMP protocol is designed, the connection may close/terminate without the client
    * receiving the Receipt {@link FrameImpl} acknowledging the DISCONNECT.
-   * You might find [Client#onWebSocketClose]{@link Client#onWebSocketClose} more appropriate to watch
+   * You might find [Client#
+   
+   
+   ]{@link Client#onWebSocketClose} more appropriate to watch
    * STOMP broker disconnects.
    */
   public onDisconnect: frameCallbackType;
@@ -477,7 +480,7 @@ export class Client {
           this._changeState(ActivationState.INACTIVE);
         }
 
-        this.onWebSocketClose(evt);
+        //this.onWebSocketClose(evt);
         // The callback is called before attempting to reconnect, this would allow the client
         // to be `deactivated` in the callback.
         if (this.active) {
