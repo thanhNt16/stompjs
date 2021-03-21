@@ -161,7 +161,7 @@ export class StompHandler {
     this._onclose = (closeEvent): void => {
       this.debug(`Connection closed to ${this._client.brokerURL}`);
       this._cleanUp();
-      this.onWebSocketClose(closeEvent);
+//       this.onWebSocketClose(closeEvent);
     };
 
     this._webSocket.onclose = this._onclose;
