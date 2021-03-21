@@ -184,7 +184,10 @@ export declare class Client {
      *
      * The way STOMP protocol is designed, the connection may close/terminate without the client
      * receiving the Receipt {@link FrameImpl} acknowledging the DISCONNECT.
-     * You might find [Client#onWebSocketClose]{@link Client#onWebSocketClose} more appropriate to watch
+     * You might find [Client#
+     
+     
+     ]{@link Client#onWebSocketClose} more appropriate to watch
      * STOMP broker disconnects.
      */
     onDisconnect: frameCallbackType;

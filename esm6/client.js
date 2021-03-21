@@ -242,7 +242,7 @@ export class Client {
                         this._resolveSocketClose = undefined;
                         this._changeState(ActivationState.INACTIVE);
                     }
-                    this.onWebSocketClose(evt);
+                    //this.onWebSocketClose(evt);
                     // The callback is called before attempting to reconnect, this would allow the client
                     // to be `deactivated` in the callback.
                     if (this.active) {

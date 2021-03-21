@@ -419,7 +419,7 @@ class Client {
                         this._resolveSocketClose = undefined;
                         this._changeState(_types__WEBPACK_IMPORTED_MODULE_1__["ActivationState"].INACTIVE);
                     }
-                    this.onWebSocketClose(evt);
+                    //this.onWebSocketClose(evt);
                     // The callback is called before attempting to reconnect, this would allow the client
                     // to be `deactivated` in the callback.
                     if (this.active) {
@@ -1753,7 +1753,7 @@ class StompHandler {
         this._onclose = (closeEvent) => {
             this.debug(`Connection closed to ${this._client.brokerURL}`);
             this._cleanUp();
-            this.onWebSocketClose(closeEvent);
+            //       this.onWebSocketClose(closeEvent);
         };
         this._webSocket.onclose = this._onclose;
         this._webSocket.onerror = (errorEvent) => {
@@ -2153,7 +2153,7 @@ Versions.default = new Versions([
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! /home/kdeepak/MyWork/Tech/stomp/stompjs/src/index.ts */"./src/index.ts");
+module.exports = __webpack_require__(/*! /Users/harry/Desktop/stompjs/src/index.ts */"./src/index.ts");
 
 
 /***/ })
